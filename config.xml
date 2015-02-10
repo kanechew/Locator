@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.locator" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+<widget id= "com.example.locator" 
+    version= "0.0.1" 
+    xmlns= "http://www.w3.org/ns/widgets" 
+    xmlns:gap= "http://www.w3.org/ns/1.0" 
+    xmlns:cdv= "http://cordova.apache.org/ns/1.0"
+    xmlns:android= "http://schemas.android.com/apk/res/android">
+
     <name>Locator</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -9,5 +16,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+    
+    <gap:platform name="android" />
+    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" source="pgb"/>
 </widget>
